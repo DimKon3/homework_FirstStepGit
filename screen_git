@@ -1,0 +1,206 @@
+
+user@user-▒▒ MINGW64 ~/Documents
+$ mkdir homework_FirstStepGit
+
+user@user-▒▒ MINGW64 ~/Documents
+$ cd homework_FirstStepGit
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit
+$ git init
+Initialized empty Git repository in C:/Users/user/Documents/homework_FirstStepGit/.git/
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ touch README.md
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git add .
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git add .
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git commit -m "First commit. Add readme file"
+[master (root-commit) 6dfa4b7] First commit. Add readme file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git log
+commit 6dfa4b72f8b73b1f3be684b4660f60425181e147 (HEAD -> master)
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Fri Nov 24 12:16:32 2023 +0300
+
+    First commit. Add readme file
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git add .
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git commit -m "Formated text readme file"
+[master ff4166f] Formated text readme file
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git log
+commit ff4166f7d3183c4be8ac0f509e2f330f2bd1058b (HEAD -> master)
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Fri Nov 24 12:39:03 2023 +0300
+
+    Formated text readme file
+
+commit 6dfa4b72f8b73b1f3be684b4660f60425181e147
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Fri Nov 24 12:16:32 2023 +0300
+
+    First commit. Add readme file
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ touch proga.py
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git add .
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git commit -m "New file on pyhon"
+[master fee2dda] New file on pyhon
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 proga.py
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git add .
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git commit -m "Edit file on pyhon"
+[master d3079b3] Edit file on pyhon
+ 1 file changed, 1 insertion(+)
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git add README.md
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git commit -m "Change README.md file"
+[master 5732313] Change README.md file
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git log
+commit 573231348991a0549c874a949f0c122983155360 (HEAD -> master)
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Mon Nov 27 12:54:34 2023 +0300
+
+    Change README.md file
+
+commit d3079b3d441493acabb99c18384bad57806b9766
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Fri Nov 24 16:52:27 2023 +0300
+
+    Edit file on pyhon
+
+commit fee2ddaeb39bbf736dbb01b43532759a3a6e6fbc
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Fri Nov 24 13:02:50 2023 +0300
+
+    New file on pyhon
+
+commit ff4166f7d3183c4be8ac0f509e2f330f2bd1058b
+Author: Mity <tricolorkotovsk1@mail.ru>
+Date:   Fri Nov 24 12:39:03 2023 +0300
+
+    Formated text readme file
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git log --all --decorate --oneline --graph
+* 5732313 (HEAD -> master) Change README.md file
+* d3079b3 Edit file on pyhon
+* fee2dda New file on pyhon
+* ff4166f Formated text readme file
+* 6dfa4b7 First commit. Add readme file
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git remote add origin https://github.com/DimKon3/homework_FirstStepGit.git
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (master)
+$ git branch -M main                                                            
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (main)
+$ git push -u origin main
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), 1.96 KiB | 668.00 KiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/DimKon3/homework_FirstStepGit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+user@user-▒▒ MINGW64 ~/Documents/homework_FirstStepGit (main)
+$
